@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/dark.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
 </head>
 
 <body data-theme="light">
@@ -42,7 +43,12 @@
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
                 </ul>
+                <div class="d-lg-none mt-3">
+                    <a href="login.html" class="btn btn-outline w-100 mb-2">Log In</a>
+                    <a href="signup.html" class="btn btn-primary-custom w-100">Sign Up</a>
+                </div>
                 <div class="d-flex align-items-center gap-3">
                     <button id="theme-toggle" class="theme-switch" aria-label="Toggle Theme"><i
                             class="fas fa-moon"></i></button>
@@ -111,13 +117,53 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white pt-5 pb-4 mt-5">
-        <div class="container text-center">
-            <div class="d-flex align-items-center justify-content-center gap-2 mb-3">
-                <img src="assets/images/logo.png" alt="Highland Equestrian Logo" class="footer-logo">
-                <h3 class="font-heading mb-0">Highland<span class="text-accent">.</span></h3>
+    <footer>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="assets/images/logo.png" alt="Highland Equestrian Logo" class="footer-logo">
+                        <h3 class="font-heading text-white mb-0">Highland<span class="text-accent">.</span></h3>
+                    </div>
+                    <p class="small">A premier equestrian center dedicated to the art of horsemanship. Open 7 days a
+                        week.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="lessons.html">Lessons</a></li>
+                        <li class="mb-2"><a href="facilities.html">Facilities</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="pricing.html">Pricing Plans</a></li>
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Newsletter</h5>
+                    <p class="small">Subscribe for updates and event announcements.</p>
+                    <form class="mt-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control border-secondary text-white bg-dark"
+                                placeholder="Your Email">
+                            <button class="btn btn-accent" type="button">Join</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <p class="small text-white-50">&copy; 2024 Highland Equestrian Center.</p>
+            <div class="border-top border-secondary mt-5 pt-4 text-center">
+                <p class="small mb-0">&copy; 2024 Highland Equestrian Center. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
