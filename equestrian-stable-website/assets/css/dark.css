@@ -1,0 +1,41 @@
+/* Dark mode specific overrides if not handled in root */
+/* Note: Most dark mode logic is inside style.css via [data-theme="dark"] selector for better maintainability */
+
+[data-theme="dark"] .bg-light {
+    background-color: #151e29 !important;
+}
+
+[data-theme="dark"] .border {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-theme="dark"] .dropdown-menu {
+    background-color: var(--surface-color);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .dropdown-item {
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .dropdown-item:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Fix visibility of text-muted in dark mode */
+[data-theme="dark"] .text-muted {
+    color: #a0aec0 !important;
+    /* Lighter gray for better contrast on dark backgrounds */
+}
+
+/* Ensure text-dark becomes light in dark mode if used */
+[data-theme="dark"] .text-dark {
+    color: #f8f9fa !important;
+}
+
+/* Ensure input placeholders are visible */
+[data-theme="dark"] .form-control::placeholder {
+    color: #a0aec0;
+    opacity: 1;
+}

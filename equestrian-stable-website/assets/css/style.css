@@ -1,0 +1,459 @@
+:root {
+    /* Color Palette - Light Mode */
+    --primary-color: #2C3E2F;
+    --primary-light: #3a523d;
+    --accent-color: #C6A75E;
+    --accent-glow: rgba(198, 167, 94, 0.4);
+    --bg-color: #F7F6F3;
+    --surface-color: #FFFFFF;
+    --text-primary: #1F2937;
+    --text-secondary: #4B5563;
+    --border-color: rgba(44, 62, 47, 0.1);
+
+    /* Spacing */
+    --section-spacing: 120px;
+    --container-padding: 24px;
+
+    /* Transitions */
+    --transition-fast: 0.3s ease;
+    --transition-medium: 0.5s ease;
+}
+
+[data-theme="dark"] {
+    --primary-color: #3D5A42;
+    --primary-light: #2C3E2F;
+    /* Darker primary for background */
+    --bg-color: #0F1720;
+    --surface-color: #1A242F;
+    --text-primary: #E5E7EB;
+    --text-secondary: #9CA3AF;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --accent-glow: rgba(212, 178, 106, 0.2);
+}
+
+/* Typography */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-heading {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+h1 {
+    font-size: 3.5rem;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: 2.75rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    color: var(--text-secondary);
+}
+
+/* Utilities */
+.text-primary-color {
+    color: var(--primary-color) !important;
+}
+
+.text-accent {
+    color: var(--accent-color) !important;
+}
+
+.bg-primary-color {
+    background-color: var(--primary-color) !important;
+    color: white;
+}
+
+.bg-surface {
+    background-color: var(--surface-color);
+}
+
+.btn-custom {
+    padding: 12px 32px;
+    border-radius: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary-custom {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--primary-light);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-accent {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.btn-accent:hover {
+    background-color: #b09350;
+    color: white;
+}
+
+.btn-outline {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background: transparent;
+}
+
+[data-theme="dark"] .btn-outline {
+    border-color: white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+[data-theme="dark"] .btn-outline:hover {
+    background-color: white;
+    color: var(--bg-color);
+}
+
+/* Layout */
+section {
+    padding: var(--section-spacing) 0;
+    position: relative;
+}
+
+/* Navbar */
+.navbar {
+    padding: 20px 0;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] .navbar {
+    background-color: rgba(15, 23, 32, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color) !important;
+}
+
+[data-theme="dark"] .navbar-brand {
+    color: white !important;
+}
+
+/* Logo Styles */
+.navbar-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.footer-logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.nav-link {
+    color: var(--text-primary) !important;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin: 0 10px;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Card Styles - Glassmorphism Light */
+.card-custom {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] .card-custom:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-wrap {
+    overflow: hidden;
+    height: 250px;
+    position: relative;
+}
+
+.card-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.card-custom:hover .card-img-wrap img {
+    transform: scale(1.05);
+}
+
+/* Forms */
+.form-control {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 15px;
+    border-radius: 2px;
+}
+
+.form-control:focus {
+    background-color: transparent;
+    border-color: var(--accent-color);
+    color: var(--text-primary);
+    box-shadow: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.6;
+}
+
+/* Footer */
+footer {
+    background-color: #1F2937;
+    /* Always dark footer or theme based? Request says 'Clean alignment'. Usually luxe brands have dark footers. */
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+[data-theme="dark"] footer {
+    background-color: #0d1218;
+}
+
+footer h5 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+}
+
+footer p,
+footer a {
+    color: #9CA3AF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--accent-color);
+}
+
+/* Toggle Switch */
+.theme-switch {
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+    padding: 8px;
+    font-size: 1.2rem;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+.hero-text {
+    color: white;
+}
+
+.hero-text h1 {
+    color: white;
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    section {
+        --section-spacing: 80px;
+    }
+}
+
+/* Specific Section Styles */
+.feature-box {
+    padding: 40px;
+    border: 1px solid var(--border-color);
+    height: 100%;
+    transition: 0.3s;
+}
+
+.feature-box:hover {
+    border-color: var(--accent-color);
+}
+
+.price-card {
+    background: var(--surface-color);
+    padding: 40px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.price-card.featured {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 20px rgba(198, 167, 94, 0.1);
+}
+
+/* Social Media Icons */
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.social-icon:hover {
+    background-color: var(--accent-color);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(198, 167, 94, 0.3);
+}
+
+[data-theme="dark"] .social-icon {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .social-icon:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+/* Modern Utilities */
+.group:hover .group-hover-scale-110 {
+    transform: scale(1.1);
+}
+
+.transition-transform {
+    transition: transform 0.5s ease;
+}
+
+.duration-500 {
+    transition-duration: 500ms;
+}
+
+.bg-gradient-dark {
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.letter-spacing-2 {
+    letter-spacing: 2px;
+}
+
+/* Map Container */
+.map-container {
+    position: relative;
+    width: 100%;
+}
+
+.map-container iframe {
+    display: block;
+}

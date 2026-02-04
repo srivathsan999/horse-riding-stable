@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Highland Equestrian Center</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body data-theme="light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="assets/images/logo.png" alt="Highland Equestrian Logo" class="navbar-logo">
+                <span>Highland<span class="text-accent">.</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home Classic</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home Modern</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="lessons.html">Lessons</a></li>
+                    <li class="nav-item"><a class="nav-link" href="facilities.html">Facilities</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <button id="theme-toggle" class="theme-switch" aria-label="Toggle Theme"><i
+                            class="fas fa-moon"></i></button>
+                    <a href="login.html" class="btn btn-outline btn-sm d-none d-lg-block">Log In</a>
+                    <a href="signup.html" class="btn btn-primary-custom btn-sm d-none d-lg-block">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="page-header py-5 bg-primary-color mb-5"
+        style="margin-top: 76px; background-image: linear-gradient(rgba(44, 62, 47, 0.9), rgba(44, 62, 47, 0.9));">
+        <div class="container text-center py-5 fade-up">
+            <h1 class="text-white display-4">Contact Us</h1>
+            <p class="lead text-white-50">We'd love to hear from you.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-6 mb-5 mb-lg-0 fade-up">
+                    <h2 class="mb-4">Get in Touch</h2>
+                    <p class="mb-5">Have questions about our lessons, training, or facilities? Fill out the form below
+                        or give us a call.</p>
+
+                    <div class="d-flex mb-4">
+                        <div class="me-3"><i class="fas fa-map-marker-alt fa-lg text-accent"></i></div>
+                        <div>
+                            <h5 class="mb-1">Address</h5>
+                            <p class="text-muted">123 Equestrian Way, Green Valley</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <div class="me-3"><i class="fas fa-phone fa-lg text-accent"></i></div>
+                        <div>
+                            <h5 class="mb-1">Phone</h5>
+                            <p class="text-muted">(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-4">
+                        <div class="me-3"><i class="fas fa-envelope fa-lg text-accent"></i></div>
+                        <div>
+                            <h5 class="mb-1">Email</h5>
+                            <p class="text-muted">info@highlandequestrian.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="mt-5">
+                        <h5 class="mb-3">Follow Us</h5>
+                        <div class="d-flex gap-3">
+                            <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://youtube.com" target="_blank" class="social-icon" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 fade-up">
+                    <form class="bg-surface p-4 border rounded shadow-sm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                            </div>
+                            <div class="col-12">
+                                <label for="subject" class="form-label">Subject</label>
+                                <select class="form-control" id="subject">
+                                    <option>General Inquiry</option>
+                                    <option>Lesson Booking</option>
+                                    <option>Stable Tour</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5"
+                                    placeholder="How can we help?"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary-custom w-100">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-5 bg-surface">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <h2 class="mb-3">Find Us</h2>
+                <p class="text-muted">Visit our beautiful equestrian center in the heart of Green Valley</p>
+            </div>
+            <div class="fade-up">
+                <div class="map-container rounded overflow-hidden shadow-lg" style="height: 450px;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215206441309!2d-73.98823492346654!3d40.74844097138558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1706885234567!5m2!1sen!2sus"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="Highland Equestrian Center Location">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="assets/images/logo.png" alt="Highland Equestrian Logo" class="footer-logo">
+                        <h3 class="font-heading text-white mb-0">Highland<span class="text-accent">.</span></h3>
+                    </div>
+                    <p class="small">A premier equestrian center dedicated to the art of horsemanship. Open 7 days a
+                        week.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="lessons.html">Lessons</a></li>
+                        <li class="mb-2"><a href="facilities.html">Facilities</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="pricing.html">Pricing Plans</a></li>
+
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Newsletter</h5>
+                    <p class="small">Subscribe for updates and event announcements.</p>
+                    <form class="mt-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control border-secondary text-white bg-dark"
+                                placeholder="Your Email">
+                            <button class="btn btn-accent" type="button">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-5 pt-4 text-center">
+                <p class="small mb-0">&copy; 2024 Highland Equestrian Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

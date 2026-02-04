@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highland Equestrian Center | Premium Horse Riding Stable</title>
+    <meta name="description"
+        content="Experience world-class horse riding lessons, professional training, and luxury stable facilities at Highland Equestrian Center.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+
+    <style>
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body data-theme="light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="assets/images/logo.png" alt="Highland Equestrian Logo" class="navbar-logo">
+                <span>Highland<span class="text-accent">.</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home Classic</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home Modern</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="lessons.html">Lessons</a></li>
+                    <li class="nav-item"><a class="nav-link" href="facilities.html">Facilities</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <button id="theme-toggle" class="theme-switch" aria-label="Toggle Theme"><i
+                            class="fas fa-moon"></i></button>
+                    <a href="login.html" class="btn btn-outline btn-sm d-none d-lg-block">Log In</a>
+                    <a href="signup.html" class="btn btn-primary-custom btn-sm d-none d-lg-block">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container position-relative z-1 fade-up">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="hero-text">
+                        <h5 class="text-accent text-uppercase letter-spacing-2 mb-3">Welcome to Highland</h5>
+                        <h1>Elegance in Every <br>Stride & Jump</h1>
+                        <p class="lead mb-4 text-white-50">Experience the finest equestrian training and stabling
+                            facilities in a serene, professional environment.</p>
+                        <div class="d-flex gap-3">
+                            <a href="lessons.html" class="btn btn-primary-custom">Book a Lesson</a>
+                            <a href="facilities.html" class="btn btn-outline text-white border-white">Explore
+                                Facilities</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="py-5 bg-surface">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0 reveal-img">
+                    <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=800&q=80"
+                        alt="Stable Interior" class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="col-lg-6 ps-lg-5 fade-up">
+                    <h5 class="text-accent text-uppercase mb-2">About Us</h5>
+                    <h2 class="mb-4">A Legacy of Horsemanship</h2>
+                    <p>Founded on a passion for horses and a dedication to excellence, Highland Equestrian Center offers
+                        a sanctuary for riders of all levels. Our state-of-the-art facilities and experienced
+                        instructors ensure a safe, progressive, and enjoyable journey.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fas fa-check text-accent me-2"></i> Professional BHS Certified
+                            Instructors</li>
+                        <li class="mb-2"><i class="fas fa-check text-accent me-2"></i> Olympic Standard Indoor Arenas
+                        </li>
+                        <li class="mb-2"><i class="fas fa-check text-accent me-2"></i> Premium Stabling & Livery
+                            Services</li>
+                    </ul>
+                    <a href="about.html" class="btn btn-outline">Read Our Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="bg-light py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5 fade-up">
+                <h5 class="text-accent text-uppercase">What We Offer</h5>
+                <h2>Our Premium Services</h2>
+            </div>
+            <div class="row g-4 stagger-grid">
+                <!-- Card 1 -->
+                <div class="col-md-4">
+                    <div class="card-custom h-100">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1551524559-8af4e6624178?w=800&q=80"
+                                alt="Riding Lessons">
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="card-title">Riding Lessons</h4>
+                            <p class="card-text">Private and group lessons tailored to your skill level, from beginners
+                                to advanced competitors with skills.</p>
+                            <a href="lessons.html" class="btn btn-link text-primary-color p-0">Learn More <i
+                                    class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card-custom h-100">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1551884831-bbf3cdc6469e?w=800&q=80"
+                                alt="Horse Training">
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="card-title">Professional Training</h4>
+                            <p class="card-text">Comprehensive schooling for your horse, focusing on dressage, jumping,
+                                and behavioral correction.</p>
+                            <a href="training.html" class="btn btn-link text-primary-color p-0">Learn More <i
+                                    class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card-custom h-100">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Livery & Stabling">
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="card-title">Livery & Stabling</h4>
+                            <p class="card-text">Full-service livery packages including grooming, feeding, and turnout
+                                in our lush paddocks.</p>
+                            <a href="facilities.html" class="btn btn-link text-primary-color p-0">Learn More <i
+                                    class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History/Legacy Section -->
+    <section class="py-5 bg-surface">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0 fade-up">
+                    <img src="https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?w=800&q=80" alt="Legacy"
+                        class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="col-lg-6 ps-lg-5 fade-up">
+                    <span class="text-accent text-uppercase small letter-spacing-2 fw-bold">Our Legacy</span>
+                    <h2 class="mb-4">Decades of Equestrian Excellence</h2>
+                    <p class="text-muted mb-4">Founded in 1985, Highland Equestrian Center has been the cornerstone of
+                        the local riding community for over 35 years. What started as a small family farm has grown into
+                        one of the region's most respected training facilities.</p>
+                    <p class="text-muted mb-4">Our commitment to the welfare of the horse and the education of the rider
+                        remains unchanged. We combine traditional horsemanship with modern training techniques to create
+                        a holistic learning environment.</p>
+                    <div class="row g-4 pt-2">
+                        <div class="col-sm-6">
+                            <h4 class="mb-2">35+ Years</h4>
+                            <p class="small text-muted mb-0">Of dedicated service to riders.</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <h4 class="mb-2">500+ Students</h4>
+                            <p class="small text-muted mb-0">Graduated through our programs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5 fade-up">
+                <span class="text-accent text-uppercase small letter-spacing-2 fw-bold">Testimonials</span>
+                <h2 class="mt-2">What Our Community Says</h2>
+            </div>
+            <div class="row g-4 stagger-grid">
+                <div class="col-md-4">
+                    <div class="card-custom h-100 p-4 border-0 shadow-sm text-center">
+                        <div class="mb-3 text-accent">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="fst-italic mb-4 text-muted">"The instructors here are truly world-class. My riding has
+                            improved more in three months than in the previous three years at other centers."</p>
+                        <h5 class="mb-1">Alice Johnson</h5>
+                        <p class="small text-accent mb-0">Dressage Student</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom h-100 p-4 border-0 shadow-sm text-center">
+                        <div class="mb-3 text-accent">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="fst-italic mb-4 text-muted">"A fantastic place for both horse and rider. The
+                            facilities are top-notch and the care my horse receives is exceptional."</p>
+                        <h5 class="mb-1">Mark Thompson</h5>
+                        <p class="small text-accent mb-0">Livery Client</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-custom h-100 p-4 border-0 shadow-sm text-center">
+                        <div class="mb-3 text-accent">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="fst-italic mb-4 text-muted">"My kids love the pony sessions. It's safe, professional,
+                            and they've learned so much about horse care, not just riding."</p>
+                        <h5 class="mb-1">Sarah Wilson</h5>
+                        <p class="small text-accent mb-0">Parent</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5" style="background: var(--primary-color);">
+        <div class="container py-5 text-center text-white fade-up">
+            <h2 class="text-white mb-4">Start Your Journey Today</h2>
+            <p class="mb-4 text-white-50 w-75 mx-auto">Join our community of passionate riders. Whether you're saddling
+                up for the first time or aiming for gold, we are here to support you.</p>
+            <a href="contact.html" class="btn btn-accent btn-lg">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="assets/images/logo.png" alt="Highland Equestrian Logo" class="footer-logo">
+                        <h3 class="font-heading text-white mb-0">Highland<span class="text-accent">.</span></h3>
+                    </div>
+                    <p class="small">A premier equestrian center dedicated to the art of horsemanship. Open 7 days a
+                        week.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="lessons.html">Lessons</a></li>
+                        <li class="mb-2"><a href="facilities.html">Facilities</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="pricing.html">Pricing Plans</a></li>
+
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Newsletter</h5>
+                    <p class="small">Subscribe for updates and event announcements.</p>
+                    <form class="mt-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control border-secondary text-white bg-dark"
+                                placeholder="Your Email">
+                            <button class="btn btn-accent" type="button">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-5 pt-4 text-center">
+                <p class="small mb-0">&copy; 2024 Highland Equestrian Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

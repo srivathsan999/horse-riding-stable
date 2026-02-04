@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessons | Highland Equestrian Center</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body data-theme="light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="assets/images/logo.png" alt="Highland Equestrian Logo" class="navbar-logo">
+                <span>Highland<span class="text-accent">.</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home Classic</a></li>
+                            <li><a class="dropdown-item" href="home-2.html">Home Modern</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="lessons.html">Lessons</a></li>
+                    <li class="nav-item"><a class="nav-link" href="facilities.html">Facilities</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <button id="theme-toggle" class="theme-switch" aria-label="Toggle Theme"><i
+                            class="fas fa-moon"></i></button>
+                    <a href="login.html" class="btn btn-outline btn-sm d-none d-lg-block">Log In</a>
+                    <a href="signup.html" class="btn btn-primary-custom btn-sm d-none d-lg-block">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="page-header py-5 bg-primary-color mb-5"
+        style="margin-top: 76px; background-image: linear-gradient(rgba(44, 62, 47, 0.9), rgba(44, 62, 47, 0.9)), url('https://images.unsplash.com/photo-1534008104445-56e6328336d3?w=1200'); background-size: cover;">
+        <div class="container text-center py-5 fade-up">
+            <h1 class="text-white display-4">Riding Lessons</h1>
+            <p class="lead text-white-50">Discover the joy of riding with our expert instructors.</p>
+        </div>
+    </section>
+
+    <!-- Lessons List -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5 stagger-grid">
+                <!-- Lesson 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-custom h-100">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?w=800"
+                                alt="Private Lesson">
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-primary-color mb-2">Popular</span>
+                            <h3>Private Lessons</h3>
+                            <p>One-on-one instruction tailored to your specific needs and goals.
+                            </p>
+                            <a href="lesson-private.html" class="btn btn-outline btn-sm mt-3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lesson 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-custom h-100">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1551884831-bbf3cdc6469e?w=800&q=80"
+                                alt="Group Lesson">
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-secondary mb-2">Social</span>
+                            <h3>Group Lessons</h3>
+                            <p>Ride with others of similar ability. A fun way to learn and make friends at the stable.
+                            </p>
+                            <a href="lesson-group.html" class="btn btn-outline btn-sm mt-3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lesson 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-custom h-100">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1598974357801-cbca100e65d3?w=800&q=80"
+                                alt="Jumping Clinic">
+                        </div>
+                        <div class="card-body p-4">
+                            <span class="badge bg-accent mb-2 text-white">Advanced</span>
+                            <h3>Jumping Clinics</h3>
+                            <p>Specialized sessions focusing on show jumping techniques and course navigation.</p>
+                            <a href="lesson-jumping.html" class="btn btn-outline btn-sm mt-3">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img src="assets/images/logo.png" alt="Highland Equestrian Logo" class="footer-logo">
+                        <h3 class="font-heading text-white mb-0">Highland<span class="text-accent">.</span></h3>
+                    </div>
+                    <p class="small">A premier equestrian center dedicated to the art of horsemanship. Open 7 days a
+                        week.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="lessons.html">Lessons</a></li>
+                        <li class="mb-2"><a href="facilities.html">Facilities</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="pricing.html">Pricing Plans</a></li>
+
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5>Newsletter</h5>
+                    <p class="small">Subscribe for updates and event announcements.</p>
+                    <form class="mt-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control border-secondary text-white bg-dark"
+                                placeholder="Your Email">
+                            <button class="btn btn-accent" type="button">Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-5 pt-4 text-center">
+                <p class="small mb-0">&copy; 2024 Highland Equestrian Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
