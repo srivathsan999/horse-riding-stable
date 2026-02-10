@@ -178,17 +178,56 @@ section {
     color: white !important;
 }
 
-/* Logo Styles */
-.navbar-logo {
+/* Navbar Toggler (Hamburger Menu) */
+.navbar-toggler {
+    border-color: var(--text-primary);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+[data-theme="dark"] .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+[data-theme="dark"] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Logo Styles - Same size for navbar and footer */
+.navbar-logo,
+.footer-logo {
     width: 40px;
     height: 40px;
     object-fit: contain;
 }
 
-.footer-logo {
-    width: 45px;
-    height: 45px;
-    object-fit: contain;
+/* Brand Text Styles - Same for navbar and footer */
+.navbar-brand,
+footer h3.font-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Navbar brand color */
+.navbar-brand {
+    color: var(--primary-color) !important;
+}
+
+[data-theme="dark"] .navbar-brand {
+    color: white !important;
+}
+
+/* Footer brand color - match navbar brand color */
+footer h3.font-heading {
+    color: var(--primary-color) !important;
+}
+
+[data-theme="dark"] footer h3.font-heading {
+    color: white !important;
 }
 
 .nav-link {
@@ -210,8 +249,13 @@ section {
     transition: width 0.3s ease;
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     width: 100%;
+}
+
+.nav-link.active {
+    color: var(--accent-color) !important;
 }
 
 /* Card Styles - Glassmorphism Light */
@@ -273,32 +317,78 @@ textarea::placeholder {
 
 /* Footer */
 footer {
-    background-color: #1F2937;
-    /* Always dark footer or theme based? Request says 'Clean alignment'. Usually luxe brands have dark footers. */
-    color: white;
+    background-color: white;
+    color: var(--text-primary);
     padding-top: 80px;
     padding-bottom: 40px;
+    border-top: 1px solid var(--border-color);
 }
 
 [data-theme="dark"] footer {
-    background-color: #0d1218;
+    background-color: #1F2937;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 footer h5 {
-    color: white;
+    color: var(--text-primary);
     margin-bottom: 20px;
     font-size: 1.25rem;
 }
 
+[data-theme="dark"] footer h5 {
+    color: white;
+}
+
 footer p,
 footer a {
-    color: #9CA3AF;
+    color: var(--text-secondary);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
+[data-theme="dark"] footer p,
+[data-theme="dark"] footer a {
+    color: #9CA3AF;
+}
+
 footer a:hover {
     color: var(--accent-color);
+}
+
+/* Footer Newsletter Input */
+footer .form-control {
+    background-color: var(--surface-color) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] footer .form-control {
+    background-color: #374151 !important;
+    border-color: #4B5563 !important;
+    color: white !important;
+}
+
+footer .form-control::placeholder {
+    color: var(--text-secondary) !important;
+    opacity: 0.7;
+}
+
+[data-theme="dark"] footer .form-control::placeholder {
+    color: #9CA3AF !important;
+    opacity: 1;
+}
+
+footer .form-control:focus {
+    background-color: var(--surface-color) !important;
+    border-color: var(--accent-color) !important;
+    color: var(--text-primary) !important;
+}
+
+[data-theme="dark"] footer .form-control:focus {
+    background-color: #374151 !important;
+    border-color: var(--accent-color) !important;
+    color: white !important;
 }
 
 /* Toggle Switch */

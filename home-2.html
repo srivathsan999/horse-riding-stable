@@ -21,6 +21,7 @@
             width: 100%;
             object-fit: cover;
         }
+
         .testimonial-avatar {
             width: 48px;
             height: 48px;
@@ -33,7 +34,7 @@
 <body data-theme="light">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-xl fixed-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
                 <img src="assets/images/logo.png" alt="Highland Equestrian Logo" class="navbar-logo">
@@ -60,15 +61,15 @@
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
                 </ul>
-                <div class="d-lg-none mt-3">
+                <div class="d-xl-none mt-3">
                     <a href="login.html" class="btn btn-outline w-100 mb-2">Log In</a>
                     <a href="signup.html" class="btn btn-primary-custom w-100">Sign Up</a>
                 </div>
                 <div class="d-flex align-items-center gap-3">
                     <button id="theme-toggle" class="theme-switch" aria-label="Toggle Theme"><i
                             class="fas fa-moon"></i></button>
-                    <a href="login.html" class="btn btn-outline btn-sm d-none d-lg-block">Log In</a>
-                    <a href="signup.html" class="btn btn-primary-custom btn-sm d-none d-lg-block">Sign Up</a>
+                    <a href="login.html" class="btn btn-outline btn-sm d-none d-xl-block">Log In</a>
+                    <a href="signup.html" class="btn btn-primary-custom btn-sm d-none d-xl-block">Sign Up</a>
                 </div>
             </div>
         </div>
@@ -80,32 +81,37 @@
         <div class="container text-center text-white py-5 fade-up">
             <span class="text-accent text-uppercase letter-spacing-2 mb-3 d-block">Ride • Train • Thrive</span>
             <h1 class="display-3 fw-bold mb-4">Modern Equestrian Training</h1>
-            <p class="lead text-white-50 mb-5">Coaching for every level, world-class facilities, and a welcoming community.</p>
+            <p class="lead text-white-50 mb-5">Coaching for every level, world-class facilities, and a welcoming
+                community.</p>
             <div class="d-flex justify-content-center gap-3">
                 <a href="lessons.html" class="btn btn-primary-custom btn-lg">Book a Lesson</a>
                 <a href="facilities.html" class="btn btn-outline btn-lg">Explore Facilities</a>
             </div>
             <div class="row g-4 mt-5">
                 <div class="col-md-3">
-                    <div class="card-custom border-0 bg-surface p-3">
+                    <div class="card-custom border-0 p-3"
+                        style="background-color: rgba(26, 36, 47, 0.6); backdrop-filter: blur(10px);">
                         <div class="small text-white-50">Certified Instructors</div>
                         <div class="h3 mb-0 text-accent">12+</div>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card-custom border-0 bg-surface p-3">
+                    <div class="card-custom border-0 p-3"
+                        style="background-color: rgba(26, 36, 47, 0.6); backdrop-filter: blur(10px);">
                         <div class="small text-white-50">Active Riders</div>
                         <div class="h3 mb-0 text-accent">200+</div>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card-custom border-0 bg-surface p-3">
+                    <div class="card-custom border-0 p-3"
+                        style="background-color: rgba(26, 36, 47, 0.6); backdrop-filter: blur(10px);">
                         <div class="small text-white-50">Lesson Packages</div>
                         <div class="h3 mb-0 text-accent">Flexible</div>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card-custom border-0 bg-surface p-3">
+                    <div class="card-custom border-0 p-3"
+                        style="background-color: rgba(26, 36, 47, 0.6); backdrop-filter: blur(10px);">
                         <div class="small text-white-50">Awards</div>
                         <div class="h3 mb-0 text-accent">15+</div>
                     </div>
@@ -122,14 +128,16 @@
                     <div class="card-custom p-4 h-100 border-0">
                         <div class="mb-3 text-accent"><i class="fas fa-shield-alt fa-2x"></i></div>
                         <h4 class="mb-2">Safe & Supportive</h4>
-                        <p class="text-muted mb-0">A welcoming environment focused on safety and confidence-building for all riders.</p>
+                        <p class="text-muted mb-0">A welcoming environment focused on safety and confidence-building for
+                            all riders.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 fade-up" style="transition-delay: 0.1s;">
                     <div class="card-custom p-4 h-100 border-0">
                         <div class="mb-3 text-accent"><i class="fas fa-user-graduate fa-2x"></i></div>
                         <h4 class="mb-2">Certified Coaches</h4>
-                        <p class="text-muted mb-0">Experienced instructors offering private training, group lessons, and clinics.</p>
+                        <p class="text-muted mb-0">Experienced instructors offering private training, group lessons, and
+                            clinics.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 fade-up" style="transition-delay: 0.2s;">
@@ -156,7 +164,8 @@
             <div class="row g-4">
                 <div class="col-md-4 fade-up">
                     <div class="card-custom h-100 border-0 overflow-hidden program-card">
-                        <img src="https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=800" alt="Private Lessons">
+                        <img src="https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=800"
+                            alt="Private Lessons">
                         <div class="p-4">
                             <h4 class="mb-2">Private Lessons</h4>
                             <p class="text-muted">One-on-one coaching tailored to your goals and experience.</p>
@@ -176,7 +185,8 @@
                 </div>
                 <div class="col-md-4 fade-up" style="transition-delay: 0.2s;">
                     <div class="card-custom h-100 border-0 overflow-hidden program-card">
-                        <img src="https://images.unsplash.com/photo-1598974357801-cbca100e65d3?w=800" alt="Jumping Clinics">
+                        <img src="https://images.unsplash.com/photo-1598974357801-cbca100e65d3?w=800"
+                            alt="Jumping Clinics">
                         <div class="p-4">
                             <h4 class="mb-2">Jumping Clinics</h4>
                             <p class="text-muted">Advance your technique with focused show jumping sessions.</p>
@@ -203,19 +213,22 @@
             <div class="row g-3">
                 <div class="col-md-8 fade-up">
                     <div class="card-custom h-100 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=1200" alt="Outdoor Arena" class="img-fluid h-100 object-fit-cover">
+                        <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=1200"
+                            alt="Outdoor Arena" class="img-fluid h-100 object-fit-cover">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="row g-3">
                         <div class="col-12 fade-up">
                             <div class="card-custom overflow-hidden">
-                                <img src="https://images.unsplash.com/photo-1554471536-1f95d5be5a17?w=600" alt="Stable" class="img-fluid">
+                                <img src="https://images.unsplash.com/photo-1554471536-1f95d5be5a17?w=600" alt="Stable"
+                                    class="img-fluid">
                             </div>
                         </div>
                         <div class="col-12 fade-up">
                             <div class="card-custom overflow-hidden">
-                                <img src="https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?w=600" alt="Indoor Arena" class="img-fluid">
+                                <img src="https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?w=600"
+                                    alt="Indoor Arena" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -250,37 +263,43 @@
                 <div class="col-lg-4 fade-up">
                     <div class="card-custom h-100 p-4 border-0 bg-surface">
                         <div class="d-flex align-items-center gap-3 mb-3">
-                            <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200" alt="Rider">
+                            <img class="testimonial-avatar"
+                                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200" alt="Rider">
                             <div>
                                 <div class="fw-bold">Emma R.</div>
                                 <div class="small text-muted">Novice Rider</div>
                             </div>
                         </div>
-                        <p class="mb-0 text-muted">I booked a 10-pack and improved faster than I imagined. Instructors are kind and highly skilled.</p>
+                        <p class="mb-0 text-muted">I booked a 10-pack and improved faster than I imagined. Instructors
+                            are kind and highly skilled.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 fade-up" style="transition-delay: 0.1s;">
                     <div class="card-custom h-100 p-4 border-0 bg-surface">
                         <div class="d-flex align-items-center gap-3 mb-3">
-                            <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=200" alt="Rider">
+                            <img class="testimonial-avatar"
+                                src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=200" alt="Rider">
                             <div>
                                 <div class="fw-bold">Liam S.</div>
                                 <div class="small text-muted">Show Jumper</div>
                             </div>
                         </div>
-                        <p class="mb-0 text-muted">The jumping clinics are top-tier. Helpful feedback and a supportive atmosphere.</p>
+                        <p class="mb-0 text-muted">The jumping clinics are top-tier. Helpful feedback and a supportive
+                            atmosphere.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 fade-up" style="transition-delay: 0.2s;">
                     <div class="card-custom h-100 p-4 border-0 bg-surface">
                         <div class="d-flex align-items-center gap-3 mb-3">
-                            <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=200" alt="Rider">
+                            <img class="testimonial-avatar"
+                                src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=200" alt="Rider">
                             <div>
                                 <div class="fw-bold">Sophia K.</div>
                                 <div class="small text-muted">Dressage</div>
                             </div>
                         </div>
-                        <p class="mb-0 text-muted">Beautiful facilities and calm, knowledgeable coaches. I feel prepared for my first show.</p>
+                        <p class="mb-0 text-muted">Beautiful facilities and calm, knowledgeable coaches. I feel prepared
+                            for my first show.</p>
                     </div>
                 </div>
             </div>
@@ -303,7 +322,8 @@
                         <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800" alt="Nutrition">
                         <div class="p-4">
                             <div class="small text-accent mb-2">Wellness</div>
-                            <h4 class="mb-2"><a href="blog-nutrition.html" class="text-primary-color text-decoration-none">Nutrition Guide</a></h4>
+                            <h4 class="mb-2"><a href="blog-nutrition.html"
+                                    class="text-primary-color text-decoration-none">Nutrition Guide</a></h4>
                             <p class="text-muted mb-3">Optimize your horse's diet for performance and health.</p>
                             <a href="blog-nutrition.html" class="btn btn-link text-primary-color p-0">Read More</a>
                         </div>
@@ -314,7 +334,8 @@
                         <img src="https://images.unsplash.com/photo-1573867639040-6dd25fa5f597?w=800" alt="Summer Show">
                         <div class="p-4">
                             <div class="small text-accent mb-2">Events</div>
-                            <h4 class="mb-2"><a href="blog-summer-show.html" class="text-primary-color text-decoration-none">Upcoming Summer Show</a></h4>
+                            <h4 class="mb-2"><a href="blog-summer-show.html"
+                                    class="text-primary-color text-decoration-none">Upcoming Summer Show</a></h4>
                             <p class="text-muted mb-3">Join our annual show featuring classes for all levels.</p>
                             <a href="blog-summer-show.html" class="btn btn-link text-primary-color p-0">Read More</a>
                         </div>
@@ -322,11 +343,14 @@
                 </div>
                 <div class="col-md-4 fade-up" style="transition-delay: 0.2s;">
                     <div class="card-custom h-100 border-0 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=800" alt="Balance Tips">
+                        <img src="https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=800"
+                            alt="Balance Tips">
                         <div class="p-4">
                             <div class="small text-accent mb-2">Training Tips</div>
-                            <h4 class="mb-2"><a href="blog-balance-tips.html" class="text-primary-color text-decoration-none">5 Tips for Better Balance</a></h4>
-                            <p class="text-muted mb-3">Improve your seat, balance, and communication with your horse.</p>
+                            <h4 class="mb-2"><a href="blog-balance-tips.html"
+                                    class="text-primary-color text-decoration-none">5 Tips for Better Balance</a></h4>
+                            <p class="text-muted mb-3">Improve your seat, balance, and communication with your horse.
+                            </p>
                             <a href="blog-balance-tips.html" class="btn btn-link text-primary-color p-0">Read More</a>
                         </div>
                     </div>
@@ -340,7 +364,8 @@
         <div class="container py-5">
             <div class="card-custom p-5 border-0 bg-primary-color text-white text-center fade-up">
                 <h2 class="mb-3">Ready to Start Your Equestrian Journey?</h2>
-                <p class="text-white-50 mb-4">Whether you’re a first-time rider or preparing for competition, we’re here to help.</p>
+                <p class="text-white-50 mb-4">Whether you’re a first-time rider or preparing for competition, we’re here
+                    to help.</p>
                 <a href="contact.html" class="btn btn-accent btn-lg">Contact Us</a>
             </div>
         </div>
