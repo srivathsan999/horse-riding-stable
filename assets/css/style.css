@@ -249,6 +249,23 @@ footer h3.font-heading {
     transition: width 0.3s ease;
 }
 
+/* Hide underline for dropdown toggles except when active */
+.dropdown-toggle::after {
+    display: none;
+}
+
+/* Show underline for active dropdown toggle */
+.dropdown-toggle.active::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-color);
+}
+
 .nav-link:hover::after,
 .nav-link.active::after {
     width: 100%;
@@ -474,11 +491,78 @@ footer .form-control:focus {
     border: 1px solid var(--border-color);
     text-align: center;
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
 }
 
 .price-card.featured {
     border-color: var(--accent-color);
     box-shadow: 0 0 20px rgba(198, 167, 94, 0.1);
+}
+
+.price-card .badge-container {
+    min-height: 24px;
+    margin-bottom: 8px;
+}
+
+/* Center-aligned pricing card lists */
+.price-card ul {
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.price-card ul li {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 24px;
+}
+
+.price-card ul li i {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+
+/* FAQ Accordion Dark Mode Styles */
+[data-theme="dark"] .accordion-item {
+    background-color: var(--surface-color);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .accordion-button {
+    background-color: var(--surface-color);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .accordion-button:not(.collapsed) {
+    background-color: var(--surface-color);
+    color: var(--text-primary);
+    box-shadow: none;
+}
+
+[data-theme="dark"] .accordion-button:focus {
+    box-shadow: none;
+    border-color: var(--accent-color);
+}
+
+[data-theme="dark"] .accordion-button::after {
+    filter: invert(1);
+}
+
+[data-theme="dark"] .accordion-body {
+    background-color: var(--surface-color);
+    color: var(--text-primary);
 }
 
 /* Social Media Icons */

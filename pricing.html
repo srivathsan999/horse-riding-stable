@@ -75,6 +75,7 @@
                 <!-- Basic -->
                 <div class="col-lg-4">
                     <div class="price-card h-100 rounded">
+                        <div class="badge-container"></div>
                         <h4 class="mb-3">Single Lesson</h4>
                         <h2 class="text-primary-color mb-4">$85<small class="text-muted fs-6">/hour</small></h2>
                         <ul class="list-unstyled mb-4 text-start">
@@ -88,7 +89,7 @@
                 <!-- Standard -->
                 <div class="col-lg-4">
                     <div class="price-card h-100 rounded featured">
-                        <div class="mb-3"><span class="badge bg-accent text-white">Best Value</span></div>
+                        <div class="badge-container"><span class="badge bg-accent text-white">Best Value</span></div>
                         <h4 class="mb-3">Lesson Package</h4>
                         <h2 class="text-primary-color mb-4">$750<small class="text-muted fs-6">/10 lessons</small></h2>
                         <ul class="list-unstyled mb-4 text-start">
@@ -102,14 +103,141 @@
                 <!-- Premium -->
                 <div class="col-lg-4">
                     <div class="price-card h-100 rounded">
+                        <div class="badge-container"></div>
                         <h4 class="mb-3">Full Livery</h4>
                         <h2 class="text-primary-color mb-4">$1200<small class="text-muted fs-6">/month</small></h2>
                         <ul class="list-unstyled mb-4 text-start">
                             <li class="mb-2"><i class="fas fa-check text-accent me-2"></i> Luxury stable box</li>
-                            <li class="mb-2"><i class="fas fa-check text-accent me-2"></i> Daily turnout & grooming</li>
+                            <li class="mb-2"><i class="fas fa-check text-accent me-2"></i> Daily grooming</li>
                             <li class="mb-2"><i class="fas fa-check text-accent me-2"></i> Full facility access</li>
                         </ul>
                         <a href="contact.html" class="btn btn-outline w-100">Inquire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <span class="text-accent text-uppercase small letter-spacing-2 fw-bold">FAQ</span>
+                <h2 class="mt-2">Frequently Asked Questions</h2>
+                <p class="text-muted w-75 mx-auto">Common questions about our pricing and services.</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                    <i class="fas fa-question-circle text-accent me-3"></i>
+                                    Do I need previous riding experience?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" 
+                                 data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Not at all! We welcome riders of all skill levels, from complete beginners to advanced 
+                                    competitors. Our instructors will assess your experience and tailor lessons accordingly.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                    <i class="fas fa-question-circle text-accent me-3"></i>
+                                    What should I wear for my first lesson?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" 
+                                 data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We recommend comfortable pants (jeans or riding pants), closed-toe shoes with a small heel, 
+                                    and weather-appropriate layers. We provide helmets and all necessary equipment for your first lesson.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                    <i class="fas fa-question-circle text-accent me-3"></i>
+                                    Can I bring my own horse?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" 
+                                 data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! We offer full livery services for horse owners. Your horse will receive excellent care 
+                                    in our luxury stables, and you can use our facilities for training and lessons.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                    <i class="fas fa-question-circle text-accent me-3"></i>
+                                    How far in advance should I book lessons?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" 
+                                 data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We recommend booking at least 48 hours in advance for individual lessons. Package holders 
+                                    can schedule lessons up to a week in advance. Weekend slots tend to fill up quickly, so book early!
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 5 -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                                    <i class="fas fa-question-circle text-accent me-3"></i>
+                                    What's included in the full livery service?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" 
+                                 data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Full livery includes luxury stable accommodation, daily feeding and turnout, grooming, 
+                                    regular health checks, use of all facilities (arenas, wash bays, tack rooms), and priority 
+                                    booking for lessons and training sessions.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 6 -->
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                                    <i class="fas fa-question-circle text-accent me-3"></i>
+                                    Do you offer group discounts?
+                                </button>
+                            </h2>
+                            <div id="faq6" class="accordion-collapse collapse" 
+                                 data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! We offer special rates for families, groups of 4+ riders, and corporate events. 
+                                    Contact our office for custom pricing and availability for group bookings.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
