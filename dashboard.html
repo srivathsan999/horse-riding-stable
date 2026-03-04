@@ -23,7 +23,7 @@
                 <img src="assets/images/logo.png" alt="Highland Equestrian Logo" class="navbar-logo">
                 <span>Highland<span class="text-accent">.</span></span>
             </a>
-            <div class="ms-auto d-lg-none">
+            <div class="ms-auto d-xl-none">
                 <button class="btn btn-outline btn-sm" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#dashboardMenu" aria-controls="dashboardMenu" aria-label="Open menu">
                     <i class="fas fa-bars"></i>
@@ -55,17 +55,8 @@
         </div>
     </div>
 
-    <!-- Header -->
-    <section class="page-header py-5 bg-primary-color mb-5"
-        style="margin-top: 76px; background-image: linear-gradient(rgba(44, 62, 47, 0.95), rgba(44, 62, 47, 0.95)), url('https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?w=1200'); background-size: cover;">
-        <div class="container py-5 fade-up text-center">
-            <h1 class="text-white display-5">Welcome, Emma</h1>
-            <p class="lead text-white-50">Manage your bookings, packages, and stable activities.</p>
-        </div>
-    </section>
-
     <!-- Main Content -->
-    <section class="pb-5">
+    <section class="pb-5" style="padding-top: 100px;">
         <div class="container">
             <div class="row g-5">
                 <!-- Sidebar -->
@@ -275,6 +266,39 @@
 
         .dashed-border {
             border: 2px dashed var(--border-color) !important;
+        }
+
+        /* Dark mode styles for offcanvas menu */
+        [data-theme="dark"] .offcanvas {
+            background-color: var(--surface-color);
+            color: var(--text-primary);
+        }
+
+        [data-theme="dark"] .offcanvas-header {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        [data-theme="dark"] .offcanvas .list-group-item {
+            background-color: transparent;
+            color: var(--text-primary);
+            border-color: var(--border-color);
+        }
+
+        [data-theme="dark"] .offcanvas .list-group-item:hover {
+            background-color: rgba(198, 167, 94, 0.1);
+        }
+
+        [data-theme="dark"] .offcanvas .list-group-item.active {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        [data-theme="dark"] .offcanvas .list-group-item.text-danger {
+            color: #ef4444 !important;
+        }
+
+        [data-theme="dark"] .btn-close {
+            filter: invert(1);
         }
     </style>
 </body>
