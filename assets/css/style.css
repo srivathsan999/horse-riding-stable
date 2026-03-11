@@ -201,6 +201,7 @@ section {
     width: 40px;
     height: 40px;
     object-fit: contain;
+    border-radius: 50%;
 }
 
 /* Brand Text Styles - Same for navbar and footer */
